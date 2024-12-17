@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Object Detection</title>
+</head>
+
+<body>
+    <h1>Object Detection</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label>Upload an image: </label>
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Detect Objects</button>
+    </form>
+
+    {% if output_image %}
+    <h2>Input Image:</h2>
+    <img src="{{ input_image }}" width="400">
+
+    <h2>Output Image:</h2>
+    <img src="{{ output_image }}" width="400">
+    {% endif %}
+
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+
+</html>
