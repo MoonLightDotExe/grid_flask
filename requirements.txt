@@ -1,0 +1,6 @@
+Flask
+tensorflow
+google-cloud-vision
+opencv-python-headless
+numpy
+Werkzeug
